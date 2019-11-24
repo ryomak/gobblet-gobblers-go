@@ -2,6 +2,7 @@ package src
 
 import (
 	"net/http"
+  "log"
 
 	echo "github.com/labstack/echo/v4"
 	"github.com/ryomak/reversi-ex-go/logic"
@@ -20,6 +21,7 @@ func InitGame(c echo.Context) error {
 		Id string `json:"room_id"`
 	}
 	res.Id = uid
+  log.Printf("Create Game : \n- RoomID:%s \n- P1:%s \n- P2:%s\n",uid,param.P1,param.P2)
 	return c.JSON(http.StatusOK, res)
 }
 
