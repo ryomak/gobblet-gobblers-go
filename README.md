@@ -1,7 +1,6 @@
 # reversi-ex-go
 
 Gobblet Gobblers clone written in Go
-https://images-na.ssl-images-amazon.com/images/I/81Jq%2BQ9jPxL._SX425_.jpg
 
 ## Introduction
 ガキ使で紹介されていたGobblet Gobblersのクローンです
