@@ -1,4 +1,4 @@
-# reversi-ex-go
+# reversi-ex-go(Gobblet Gobblers)
 
 Gobblet Gobblers clone written in Go
 
