@@ -5,11 +5,13 @@
 Gobblet Gobblers clone written in Go
 
 ## Introduction
-ガキ使で紹介されていたGobblet Gobblersのクローンです
+ガキ使で紹介されていたボードゲームで面白そうだったGobblet Gobblersのクローンです
 ロジックはAPIサーバで実装し、クライアントはCLI/webで実装します
 現在:CLIのみのみなので
 是非WebやCLIリファクタや実装お待ちしております。
 
+Gobblet Gobblersの紹介サイトを見つけたので、共有します
+https://kyoheiomi.com/board-game/recommendation/gobblet-gobblers
 ## cli
 <img width="1275" alt="スクリーンショット 2019-11-24 17 17 44" src="https://user-images.githubusercontent.com/21288308/69492032-1f5eef80-0ee0-11ea-91fb-d62c0cddab85.png">
 <img width="1277" alt="スクリーンショット 2019-11-24 17 24 36" src="https://user-images.githubusercontent.com/21288308/69492034-21c14980-0ee0-11ea-9cc2-3dbcf477f5aa.png">
