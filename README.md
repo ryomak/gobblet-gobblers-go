@@ -1,4 +1,6 @@
 # reversi-ex-go(Gobblet Gobblers)
+[![GoDoc](https://godoc.org/github.com/ryomak/reversi-ex-go?status.svg)](https://godoc.org/github.com/ryomak/brainfuck-go)
+[![GoReport](https://goreportcard.com/badge/github.com/ryomak/reversi-ex-go)](https://goreportcard.com/report/github.com/ryomak/reversi-ex-go)
 
 Gobblet Gobblers clone written in Go
 
