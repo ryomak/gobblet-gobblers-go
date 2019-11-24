@@ -149,19 +149,19 @@ func (app *App) DisplayBoard() {
 		Y:    panes["BoardPane"].Y() + 1,
 		MaxX: panes["BoardPane"].MaxX() - 1,
 	})
-	topx :=  (panes["BoardPane"].MaxX() + panes["BoardPane"].X())/2 - 5
-	topy := (panes["BoardPane"].MaxY() + panes["BoardPane"].Y())/2  - 5
-  //TODO 上手くボード出
-  writeSentense("A    B    C", SentenceOption{
+	topx := (panes["BoardPane"].MaxX()+panes["BoardPane"].X())/2 - 5
+	topy := (panes["BoardPane"].MaxY()+panes["BoardPane"].Y())/2 - 5
+	//TODO 上手くボード出
+	writeSentense("A    B    C", SentenceOption{
 		X:    topx,
 		Y:    topy - 2,
 		MaxX: panes["BoardPane"].MaxX() - 1,
 	})
 	for y := 0; y < 3; y++ {
-          writeRune(intToChar(y), SentenceOption{
-						X: topx - 3,
-						Y: topy + y*4,
-					})
+		writeRune(intToChar(y), SentenceOption{
+			X: topx - 3,
+			Y: topy + y*4,
+		})
 		for x := 0; x < 3; x++ {
 			pieces := app.game.Board[y][x]
 			for i := len(pieces) - 1; i >= 0; i-- {
@@ -190,9 +190,9 @@ func (app *App) DisplayInfo() {
 		winner = fmt.Sprintf("winnter:%s", app.game.Win.Name)
 	}
 	turn := ""
-  if app.me.Turn == 0{
+	if app.me.Turn == 0 {
 		turn = "あなたは閲覧者です"
-  }else if app.me.Turn == app.game.Turn {
+	} else if app.me.Turn == app.game.Turn {
 		turn = "あなたの番です"
 	} else {
 		turn = "相手の番です"
@@ -251,7 +251,7 @@ func (app *App) DisplayRestPieces() {
 }
 
 func (app *App) DisplayInput() {
-  writeSentense(fmt.Sprintf("INPUT(ex:a,A,2)-> %s", string(app.inputStr)), SentenceOption{
+	writeSentense(fmt.Sprintf("INPUT(ex:a,A,2)-> %s", string(app.inputStr)), SentenceOption{
 		X:    panes["InputPane"].X() + 5,
 		Y:    panes["InputPane"].Y() + 2,
 		MaxX: panes["InputPane"].MaxX() - 1,

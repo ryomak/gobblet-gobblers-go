@@ -62,11 +62,11 @@ func (app *App) Run() {
 	defer termbox.Close()
 	go app.fetchLoop()
 	go app.DisplayAll()
-  if app.me.Turn == 0{
-    app.WatchControl()
-  }else{
-	  app.Control()
-  }
+	if app.me.Turn == 0 {
+		app.WatchControl()
+	} else {
+		app.Control()
+	}
 }
 
 func (app *App) fetchLoop() {

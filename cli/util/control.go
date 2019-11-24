@@ -43,8 +43,8 @@ mainloop:
 	}
 }
 
-func (app *App)WatchControl(){
- mainloop:
+func (app *App) WatchControl() {
+mainloop:
 	for {
 		switch ev := termbox.PollEvent(); ev.Type {
 		case termbox.EventKey:
