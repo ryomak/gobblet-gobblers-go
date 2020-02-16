@@ -3,6 +3,8 @@ package util
 import (
 	"log"
 	"time"
+  "fmt"
+  "os"
 
 	termbox "github.com/nsf/termbox-go"
 )
@@ -47,8 +49,15 @@ func Init(u, r, m, o *string) *App {
 
 	gg, err := app.client.GetRoom()
 	if err != nil {
-		panic(err)
+    fmt.Println("問題が発生しました")
+    fmt.Println(err.Error())
+    os.Exit(1)
 	}
+  if gg.P1.Name == app.me.Name {
+    fmt.Println("相手の名前を入力しています")
+    os.Exit(1)
+  }
+
 	app.game = gg
 	app.me.Turn = gg.GetMyturn(app.me.Name)
 	app.op.Turn = gg.GetMyturn(app.op.Name)
