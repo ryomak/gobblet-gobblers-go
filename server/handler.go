@@ -1,11 +1,11 @@
-package src
+package main
 
 import (
 	"net/http"
   "log"
 
 	echo "github.com/labstack/echo/v4"
-	"github.com/ryomak/reversi-ex-go/logic"
+	"gobblet-gobblers-go/logic"
 )
 
 func InitGame(c echo.Context) error {

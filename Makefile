@@ -1,3 +1,2 @@
-server:
-	go run server/server.go
-
+server-run:
+	go run server/*.go

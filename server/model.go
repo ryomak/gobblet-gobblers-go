@@ -1,7 +1,7 @@
-package src
+package main
 
 import (
-	"github.com/ryomak/reversi-ex-go/logic"
+	"gobblet-gobblers-go/logic"
 )
 
 type GameReponse struct {

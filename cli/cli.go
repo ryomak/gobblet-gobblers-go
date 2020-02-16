@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/ryomak/reversi-ex-go/cli/util"
+	"gobblet-gobblers-go/cli/util"
 )
 
 var (
